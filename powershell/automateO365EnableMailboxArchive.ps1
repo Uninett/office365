@@ -1,13 +1,16 @@
 # automateO365EnableMailboxArchive.ps1
 # This script is "forked" from https://gist.github.com/arjancornelissen/7732b20ac9fad440d2aba5cb66233001
 
+# HowTo / Usage:
+# Replace group-name license-o365-uninett wit your own group-name
+
 $msoExchangeUrl = "https://ps.outlook.com/powershell"
 $msoExchSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri $msoExchangeUrl -Credential $cred -AllowRedirection -Authentication Basic
 Import-PSSession $msoExchSession
 
 Write-Output "Get all group members"
-$GroupID = (Get-MsolGroup -All | Where-Object {$_.DisplayName -eq "1-O365E3License"}).ObjectId
-$GroupMembers = .\Get-GroupMembers.ps1 -GroupObjectId $GroupID
+$GroupID = (Get-MsolGroup -All | Where-Object {$_.DisplayName -eq "license-o365-uninett"}).ObjectId
+$GroupMembers = Get-MsolGroupMember -GroupObjectId $GroupID
 
 Write-Output "Go thru all users"
 foreach ($user in $GroupMembers) 
