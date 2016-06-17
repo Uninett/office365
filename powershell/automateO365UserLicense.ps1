@@ -6,7 +6,6 @@
 #############################################################################
 # LicenseSKU -> ServicePlan 15.06.2016:
 # https://github.com/UNINETT/office365/blob/master/documentation/o365-licenses.md
-
 #############################################################################
 
 # HowTo / usage:
@@ -18,6 +17,14 @@
 # https://exitcodezero.wordpress.com/2013/03/14/how-to-assign-selective-office-365-license-options/
 # http://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx
 
+#------------------------------------------------------------------------------
+
+# Using this script in Azure Automation you will use "Credential assets" (Get-AutomationPSCredential) to securly authenticate to AzureAD
+# https://azure.microsoft.com/nb-no/documentation/articles/automation-credentials/
+
+#$cred = Get-Credential
+$cred = Get-AutomationPSCredential -Name 'AutomateO365Cred'
+Connect-MsolService -Credential $cred
 
 $Licenses = @{
    'STANDARDWOFFPACK_FACULTY' = @{
