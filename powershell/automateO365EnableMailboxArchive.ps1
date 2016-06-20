@@ -6,6 +6,7 @@
 # PowerShell Script to use in Azure Automation (Runbook type = powershell) to manage mailbox.
 # Replace group-name license-o365-uninett with your own SecurityGroupName
 
+$ConnectionName = "ExchangeOnline"
 $cred = Get-AutomationPSCredential -Name 'AutomateO365Cred'
 #$cred = Get-Credential
 
