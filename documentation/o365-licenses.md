@@ -6,6 +6,8 @@ https://github.com/UNINETT/office365/blob/master/powershell/listO365Licenses.ps1
 
 If you assign SKU PROJECTONLINE_PLAN_1_FACULTY to a user you first will have to disable the plan SHAREPOINTSTANDARD_EDU (In SKU STANDARDWOFFPACK_FACULTY), since Plan SHAREPOINTENTERPRISE_EDU (SharePoint Plan 2) and SHAREPOINTSTANDARD_EDU (SharePoint Plan 1) cannot coexist.
 
+Description ( ... ) is in Norwegian.
+
 # LicenseSKU -> ServicePlan 15.06.2016:
 
 ## OFFICESUBSCRIPTION_FACULTY (Office 365 ProPlus for fakultet)
