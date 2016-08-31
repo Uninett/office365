@@ -24,8 +24,7 @@ This can be implemented with use of "Azure App Service":
 
 https://github.com/UNINETT/azure/blob/master/modules/app_service.md
 
-With use of Visual Studio Example-Code at 
-
+Together with use of Visual Studio Example-Code at https://github.com/UNINETT/office365/tree/master/code/o365SmartLink
 
 ## Links ##
 
