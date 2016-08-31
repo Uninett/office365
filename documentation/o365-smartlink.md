@@ -6,7 +6,7 @@ In short, Smart Links provide users with an improved login experience when acces
 
 This is an example of a Smart Link (Federation implemented with use of direct SAML2.0 authentication between AzureAD and the FEIDE IDP provider):
 
-https://idp.feide.no/simplesaml/module.php/feide/preselectOrg.php?HomeOrg=**uninett.no**&ReturnTo=https%3A//login.microsoftonline.com/%3Fwhr%3D**uninett.no**
+https://idp.feide.no/simplesaml/module.php/feide/preselectOrg.php?HomeOrg=uninett.no&ReturnTo=https%3A//login.microsoftonline.com/%3Fwhr%3Duninett.no
 
 Where in this case **uninett.no** identifies the "home realm".
 
