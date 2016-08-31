@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{03762B69-8549-4343-8515-5971858969B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D9CE489F-1DE5-4EE3-9AE9-9B3C1674021E}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "o365SmartLink", "src\o365SmartLink\o365SmartLink.xproj", "{B0DE3C1C-4007-4876-A40B-D4FA2A6B5A94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0DE3C1C-4007-4876-A40B-D4FA2A6B5A94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0DE3C1C-4007-4876-A40B-D4FA2A6B5A94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0DE3C1C-4007-4876-A40B-D4FA2A6B5A94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0DE3C1C-4007-4876-A40B-D4FA2A6B5A94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B0DE3C1C-4007-4876-A40B-D4FA2A6B5A94} = {03762B69-8549-4343-8515-5971858969B6}
+	EndGlobalSection
+EndGlobal
